@@ -19,15 +19,30 @@ const Banner = () => {
           <a href="" className="link-light">
             <span className="banner-info-icon fas fa-bell"></span>
           </a>
-          <a href="" className="link-light">
-            <a>
+          <a href="">
+            <a className="d-flex link-light">
               <span>
                 <img src="./img/user_medium_square.png" alt="" />
               </span>
-              <span className="fas fa-sort-down" />
+              <span className="banner-sort-down-btn fas fa-sort-down" />
             </a>
           </a>
         </div>
+      </div>
+      <div className="banner-form-container text-center">
+        <h1 className="banner-logo">
+          <a href=""></a>
+        </h1>
+        <form action="" className="banner-form">
+          <span className="">
+            <span className="d-inline-block">Find</span>
+            <input type="text" name="" id="" className="" />
+          </span>
+          <span>
+            <span className="d-inline-block">Near</span>
+            <input type="text" name="" id="" />
+          </span>
+        </form>
       </div>
     </div>
   )
