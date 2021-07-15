@@ -42,6 +42,9 @@ const Banner = () => {
             <span className="d-inline-block">Near</span>
             <input type="text" name="" id="" />
           </span>
+          <button type="submit">
+            <span className="fas fa-search"/>
+          </button>
         </form>
       </div>
     </div>

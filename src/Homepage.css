@@ -79,17 +79,48 @@
 .banner-form {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr auto;
   width: 75%;
+  margin: auto;
 }
 
 .banner-form input {
-  width: 30%;
+  width: 100%;
   border: 0;
+  padding: 10px;
+  outline: none;
 }
 
 .banner-form span {
   background-color: white;
+}
+
+.banner-form>span {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto 1fr;
+  justify-items: start;
+  padding-left: 10px;
+}
+
+.banner-form>span:first-child {
+  border-right: 1px solid rgba(0,0,0,0.4);
+}
+
+.banner-form>span>span {
+  align-self: center;
+}
+
+.banner-form button {
+  border: 0;
+  background-color: red;
+  border-radius: 0 5px 5px 0;
+}
+
+.banner-form button>span {
+  background-color: red;
+  color: white;
+  padding: 0 10px;
 }
 
 @media screen and (max-width: 550px) {
