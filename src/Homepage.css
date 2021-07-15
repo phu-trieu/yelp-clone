@@ -1,0 +1,49 @@
+.banner {
+  background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/6b30e7f8206f/assets/img/home/hero_photos/atHzOuzY6J-kKdgKQnCDQQ.jpg);
+  width: 100%;
+  height: 570px;
+  background-size: cover;
+  padding-top: 30px;
+}
+
+.banner-info-bar {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  width: 85%;
+  margin: auto;
+}
+
+.banner-info-nav {
+  list-style: none;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.banner-info-nav li a {
+  text-decoration: none;
+}
+
+.banner-info-user-data {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 40%;
+  justify-self: end;
+  align-items: center;
+}
+
+.banner-info-user-data img {
+  width: 38px;
+  height: 38px;
+}
+
+.banner-info-user-data button {
+  width: 38px;
+  height: 38px;
+}
+
+.banner-info-icon {
+  font-size: 1.25rem;
+}
