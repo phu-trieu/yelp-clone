@@ -24,6 +24,7 @@
 
 .banner-info-nav li a {
   text-decoration: none;
+  font-weight: bold;
 }
 
 .banner-info-user-actions {
@@ -81,7 +82,7 @@
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr auto;
   width: 75%;
-  margin: auto;
+  margin: 0 auto 25px;
 }
 
 .banner-form input {
@@ -104,7 +105,8 @@
 }
 
 .banner-form>span:first-child {
-  border-right: 1px solid rgba(0,0,0,0.4);
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px 0 0 5px;
 }
 
 .banner-form>span>span {
@@ -113,14 +115,52 @@
 
 .banner-form button {
   border: 0;
-  background-color: red;
+  background-color: #BE2020;
   border-radius: 0 5px 5px 0;
 }
 
 .banner-form button>span {
-  background-color: red;
+  background-color: #BE2020;
   color: white;
   padding: 0 10px;
+}
+
+.dropdown>a {
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-toggle::after {
+  align-self: center;
+}
+
+.banner-services {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  row-gap: 10px;
+  padding: 0;
+  width: 75%;
+  margin: auto;
+}
+
+.banner-services-dropdown>a {
+  color: white;
+  text-decoration: none;
+  background-color: rgba(0,0,0,0);
+  font-weight: bold;
+  margin-left: 5px
+}
+
+.banner-services>li>span {
+  color: white;
+}
+
+.banner-services>li>a {
+  text-decoration: none;
+  color: white;
+  margin-left: 5px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 550px) {
@@ -138,6 +178,24 @@
 @media screen and (min-width: 626px) and (max-width: 900px) {
   .banner-info-user-actions {
     width: 75%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .banner-form {
+    display: inherit;
+  }
+  .banner-form>span:first-child {
+    border-right: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px 5px 0 0;
+  }
+  .banner-form>span:first-child input {
+    border-radius: 0 5px 0 0;
+  }
+  .banner-form button {
+    width: 100%;
+    border-radius: 0 0 5px 5px;
   }
 }
 
