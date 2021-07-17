@@ -51,6 +51,10 @@
   height: 38px;
 }
 
+.banner-info-dropdown>a {
+  max-width: 65px;
+}
+
 .banner-info-icon {
   font-size: 1.25rem;
 }
