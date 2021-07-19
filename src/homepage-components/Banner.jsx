@@ -25,10 +25,45 @@ const Banner = () => {
                 <img src="./img/user_medium_square.png" alt="" />
               </span>
             </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <li><button class="dropdown-item" type="button">Action</button></li>
-              <li><button class="dropdown-item" type="button">Another action</button></li>
-              <li><button class="dropdown-item" type="button">Something else here</button></li>
+            <ul class="banner-info-dropdown-menu dropdown-menu" aria-labelledby="dropdownMenu2">
+              <li>
+                <div className="d-grid">
+                  <img src="./logo192.png" alt="" />
+                  <div>
+                    <a href="" className="fw-bold text-decoration-none">Phu T.</a>
+                    <p>Westminster, CA</p>
+                    <div className="d-flex">
+                      <div className="d-flex me-2">
+                        <span className="fas fa-user-friends me-1" />
+                        <p>0</p>
+                      </div>
+                      <div className="d-flex">
+                        <span className="fas fa-star me-1" />
+                        <p>4</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <hr />
+              <li>
+                <a className="d-flex">
+                  <span className="fas fa-user me-2" />
+                  <p className="fw-bold">About Me</p>
+                </a>
+                <a className="d-flex">
+                  <span className="fas fa-user-friends me-2" />
+                  <p className="fw-bold">Find Friends</p>
+                </a>
+                <a className="d-flex">
+                  <span className="fas fa-cog me-2" />
+                  <p className="fw-bold">Account Settings</p>
+                </a>
+              </li>
+              <hr />
+              <li>
+                <a href="#">Log Out</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -47,7 +82,7 @@ const Banner = () => {
             <input type="text" name="" id="" />
           </span>
           <button type="submit">
-            <span className="fas fa-search"/>
+            <span className="fas fa-search" />
           </button>
         </form>
         <ul className="banner-services">
@@ -94,6 +129,14 @@ const Banner = () => {
             </div>
           </li>
         </ul>
+      </div>
+      <div className="d-flex justify-content-center">
+        <a href="" className="text-decoration-none fw-bold text-light">Amaranth Bakery & Cafe</a>
+      </div>
+      <div className="d-flex justify-content-center">
+        <p className="text-light">Photo by
+          <a href="" className="fw-bold text-decoration-none text-white"> Jen K.</a>
+        </p>
       </div>
     </div>
   )

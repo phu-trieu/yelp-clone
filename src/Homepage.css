@@ -55,6 +55,24 @@
   max-width: 65px;
 }
 
+.banner-info-dropdown-menu {
+  width: 200px;
+  padding: 15px;
+}
+
+.banner-info-dropdown-menu>li:first-child>div {
+  grid-template-rows: 1fr;
+  grid-template-columns: 3fr 7fr;
+}
+
+.banner-info-dropdown-menu>li>a {
+  text-decoration: none;
+}
+
+.banner-info-dropdown-menu>li>a>span {
+  color: black;
+}
+
 .banner-info-icon {
   font-size: 1.25rem;
 }
@@ -143,7 +161,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   row-gap: 10px;
-  padding: 0;
+  padding-left: 0;
+  padding-bottom: 130px;
   width: 75%;
   margin: auto;
 }
