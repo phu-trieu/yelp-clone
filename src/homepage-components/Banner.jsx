@@ -19,12 +19,11 @@ const Banner = () => {
           <a href="" className="link-light">
             <span className="banner-info-icon fas fa-bell"></span>
           </a>
-          <div className="dropdown">
+          <div className="banner-info-dropdown dropdown">
             <a className="btn d-flex link-light dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
               <span>
                 <img src="./img/user_medium_square.png" alt="" />
               </span>
-              {/* <span className="banner-sort-down-btn fas fa-sort-down" /> */}
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
               <li><button class="dropdown-item" type="button">Action</button></li>
