@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import Homepage from './Homepage';
 
 const App = () => {

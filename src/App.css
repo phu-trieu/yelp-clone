@@ -34,6 +34,10 @@
   color: #61dafb;
 }
 
+.yelp-color {
+  color: var(--yelp-color);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
