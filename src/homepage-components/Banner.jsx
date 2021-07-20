@@ -25,7 +25,7 @@ const Banner = () => {
                 <img src="./img/user_medium_square.png" alt="" />
               </span>
             </a>
-            <ul class="banner-info-dropdown-menu dropdown-menu" aria-labelledby="dropdownMenu2">
+            <ul className="banner-info-dropdown-menu dropdown-menu" aria-labelledby="dropdownMenu2">
               <li>
                 <div className="d-grid">
                   <img src="./logo192.png" alt="" />
@@ -98,16 +98,16 @@ const Banner = () => {
             <span className="fas fa-home" />
             <div className="banner-services-dropdown dropdown d-inline-block">
               <a href="#" className="dropdown-toggle" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">Home Services</a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-                <li><a class="dropdown-item" href="#">Air Conditioning & Heating</a></li>
-                <li><a class="dropdown-item" href="#">Contractors</a></li>
-                <li><a class="dropdown-item" href="#">Electricians</a></li>
-                <li><a class="dropdown-item" href="#">Home Cleaners</a></li>
-                <li><a class="dropdown-item" href="#">Landscapers</a></li>
-                <li><a class="dropdown-item" href="#">Locksmiths</a></li>
-                <li><a class="dropdown-item" href="#">Movers</a></li>
-                <li><a class="dropdown-item" href="#">Painters</a></li>
-                <li><a class="dropdown-item" href="#">Plumbers</a></li>
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                <li><a className="dropdown-item" href="#">Air Conditioning & Heating</a></li>
+                <li><a className="dropdown-item" href="#">Contractors</a></li>
+                <li><a className="dropdown-item" href="#">Electricians</a></li>
+                <li><a className="dropdown-item" href="#">Home Cleaners</a></li>
+                <li><a className="dropdown-item" href="#">Landscapers</a></li>
+                <li><a className="dropdown-item" href="#">Locksmiths</a></li>
+                <li><a className="dropdown-item" href="#">Movers</a></li>
+                <li><a className="dropdown-item" href="#">Painters</a></li>
+                <li><a className="dropdown-item" href="#">Plumbers</a></li>
               </ul>
             </div>
           </li>
@@ -119,12 +119,12 @@ const Banner = () => {
             <span className="fas fa-building" />
             <div className="banner-services-dropdown dropdown d-inline-block">
               <a href="#" className="dropdown-toggle" role="button" id="dropdownMenuLink3" data-bs-toggle="dropdown" aria-expanded="false">Black Owned</a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink3">
-                <li><a class="dropdown-item" href="#">Restaurants</a></li>
-                <li><a class="dropdown-item" href="#">Hair Salons</a></li>
-                <li><a class="dropdown-item" href="#">Nail Salons</a></li>
-                <li><a class="dropdown-item" href="#">Barbershops</a></li>
-                <li><a class="dropdown-item" href="#">Businesses</a></li>
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink3">
+                <li><a className="dropdown-item" href="#">Restaurants</a></li>
+                <li><a className="dropdown-item" href="#">Hair Salons</a></li>
+                <li><a className="dropdown-item" href="#">Nail Salons</a></li>
+                <li><a className="dropdown-item" href="#">Barbershops</a></li>
+                <li><a className="dropdown-item" href="#">Businesses</a></li>
               </ul>
             </div>
           </li>
