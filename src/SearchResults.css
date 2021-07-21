@@ -1,0 +1,95 @@
+.search-results-logo {
+  background-image: url(https://s3-media0.fl.yelpcdn.com/assets/public/default.yji-1997cfe373f3a95a1467e9b715f3934a.png);
+  background-size: 100px 50px;
+  width: 100px;
+  height: 50px;
+  margin: 0 auto 48px;
+}
+
+.search-results-form {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr auto;
+  width: 95%;
+  margin: 0 auto 25px;
+}
+
+.search-results-form input {
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  outline: none;
+}
+
+.search-results-form span {
+  background-color: white;
+}
+
+.search-results-form>span {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto 1fr;
+  justify-items: start;
+  padding-left: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.search-results-form>span:first-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px 0 0 5px;
+}
+
+.search-results-form>span>span {
+  align-self: center;
+}
+
+.search-results-form button {
+  border: 0;
+  background-color: #BE2020;
+  border-radius: 0 5px 5px 0;
+}
+
+.search-results-form button>span {
+  background-color: #BE2020;
+  color: white;
+  padding: 0 10px;
+}
+
+.search-results-header-services>li {
+  margin-right: 20px;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 6fr 5fr;
+  grid-template-rows: 1fr;
+}
+
+.header-businesses-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 3.5fr 3.5fr 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 750px) {
+  .search-results-form {
+    display: initial;
+  }
+  .search-results-form>span:first-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px 5px 0 0;
+  }
+  .search-results-form>span:first-child input {
+    border-radius: 0 5px 0 0;
+  }
+  .search-results-form button {
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+  }
+  .header-grid {
+    grid-template-columns: 1fr 11fr;
+  }
+  .header-businesses-grid {
+    display: none;
+  }
+}

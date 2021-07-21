@@ -1,12 +1,8 @@
 import React from 'react';
+import BannerForm from './BannerForm';
 import '../Homepage.css';
 
 const Banner = ({setView}) => {
-  const handleClick = e => {
-    e.preventDefault();
-    setView('SR');
-  }
-
   return (
     <div className="banner">
       <div className="banner-info-bar">
@@ -77,19 +73,7 @@ const Banner = ({setView}) => {
         <h1 className="banner-logo">
           <a href=""></a>
         </h1>
-        <form action="" className="banner-form">
-          <span className="">
-            <span className="d-inline-block fw-bold text-black-50">Find</span>
-            <input type="text" name="" id="" className="" placeholder="plumbers, delivery, takeout..." />
-          </span>
-          <span>
-            <span className="d-inline-block fw-bold text-black-50">Near</span>
-            <input type="text" name="" id="" defaultValue="Garden Grove, CA" />
-          </span>
-          <button type="submit" onClick={handleClick}>
-            <span className="fas fa-search" />
-          </button>
-        </form>
+        <BannerForm setView={setView} />
         <ul className="banner-services">
           <li>
             <span className="fas fa-faucet" />
