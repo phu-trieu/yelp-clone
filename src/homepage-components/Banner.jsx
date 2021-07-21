@@ -1,6 +1,5 @@
 import React from 'react';
 import BannerForm from './BannerForm';
-import '../Homepage.css';
 
 const Banner = ({setView}) => {
   return (

@@ -1,6 +1,5 @@
 import React from 'react';
 import HeaderForm from './HeaderForm';
-import '../SearchResults.css';
 
 
 const Header = ({ setView }) => {
