@@ -10,7 +10,7 @@ const Header = ({ setView }) => {
 
   return (
     <div>
-      <div className="header-grid mt-4">
+      <div className="header-grid my-4 px-5">
         <h1 className="search-results-logo text-start" onClick={handleClick}><a href=""></a></h1>
         <HeaderForm />
         <div className="header-businesses-grid">
@@ -57,15 +57,14 @@ const Header = ({ setView }) => {
             <div className=" dropdown d-inline-block">
               <a href="#" className="dropdown-toggle text-decoration-none text-dark" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">Auto Services</a>
               <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-                <li><a className="dropdown-item" href="#">Air Conditioning & Heating</a></li>
-                <li><a className="dropdown-item" href="#">Contractors</a></li>
-                <li><a className="dropdown-item" href="#">Electricians</a></li>
-                <li><a className="dropdown-item" href="#">Home Cleaners</a></li>
-                <li><a className="dropdown-item" href="#">Landscapers</a></li>
-                <li><a className="dropdown-item" href="#">Locksmiths</a></li>
-                <li><a className="dropdown-item" href="#">Movers</a></li>
-                <li><a className="dropdown-item" href="#">Painters</a></li>
-                <li><a className="dropdown-item" href="#">Plumbers</a></li>
+                <li><a className="dropdown-item" href="#">Auto Repair</a></li>
+                <li><a className="dropdown-item" href="#">Car Dealers</a></li>
+                <li><a className="dropdown-item" href="#">Auto Detailing</a></li>
+                <li><a className="dropdown-item" href="#">Oil Change</a></li>
+                <li><a className="dropdown-item" href="#">Body Shops</a></li>
+                <li><a className="dropdown-item" href="#">Parking</a></li>
+                <li><a className="dropdown-item" href="#">Car Wash</a></li>
+                <li><a className="dropdown-item" href="#">Towing</a></li>
               </ul>
             </div>
           </li>
@@ -73,15 +72,14 @@ const Header = ({ setView }) => {
             <div className=" dropdown d-inline-block">
               <a href="#" className="dropdown-toggle text-decoration-none text-dark" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">More</a>
               <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink2">
-                <li><a className="dropdown-item" href="#">Air Conditioning & Heating</a></li>
-                <li><a className="dropdown-item" href="#">Contractors</a></li>
-                <li><a className="dropdown-item" href="#">Electricians</a></li>
-                <li><a className="dropdown-item" href="#">Home Cleaners</a></li>
-                <li><a className="dropdown-item" href="#">Landscapers</a></li>
-                <li><a className="dropdown-item" href="#">Locksmiths</a></li>
-                <li><a className="dropdown-item" href="#">Movers</a></li>
-                <li><a className="dropdown-item" href="#">Painters</a></li>
-                <li><a className="dropdown-item" href="#">Plumbers</a></li>
+                <li><a className="dropdown-item" href="#">Dry Cleaning</a></li>
+                <li><a className="dropdown-item" href="#">Hair Salons</a></li>
+                <li><a className="dropdown-item" href="#">Phone Repair</a></li>
+                <li><a className="dropdown-item" href="#">Gyms</a></li>
+                <li><a className="dropdown-item" href="#">Bars</a></li>
+                <li><a className="dropdown-item" href="#">Massage</a></li>
+                <li><a className="dropdown-item" href="#">Nightlife</a></li>
+                <li><a className="dropdown-item" href="#">Shopping</a></li>
               </ul>
             </div>
           </li>

@@ -23,7 +23,7 @@ const Banner = ({setView}) => {
           <div className="banner-info-dropdown dropdown">
             <a className="btn d-flex link-light dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
               <span>
-                <img src="./img/user_medium_square.png" alt="" />
+                <img src="./logo192.png" alt="" />
               </span>
             </a>
             <ul className="banner-info-dropdown-menu dropdown-menu" aria-labelledby="dropdownMenu2">
