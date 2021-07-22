@@ -1,7 +1,5 @@
 import React from 'react';
 import NextReviewCard from './NextReviewCard';
-import '../Homepage.css';
-import '../App.css';
 
 
 const NextReview = () => {

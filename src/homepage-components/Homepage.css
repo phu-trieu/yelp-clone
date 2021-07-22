@@ -147,7 +147,7 @@
   padding: 0 10px;
 }
 
-.dropdown>a {
+.banner-info-dropdown>a {
   padding: 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -187,9 +187,12 @@
 }
 
 .next-review-grid {
-  grid-template-columns: repeat(auto-fit, minmax(1rem, 500px));
+  grid-template-columns: repeat(auto-fit, minmax(1px, 500px));
   justify-content: center;
   gap: 25px;
+  width: 85%;
+  max-width: 1500px;
+  margin: auto;
 }
 
 .next-review-card {
@@ -247,6 +250,9 @@
   .banner-form button {
     width: 100%;
     border-radius: 0 0 5px 5px;
+  }
+  .next-review-grid {
+    width: 100%;
   }
 }
 

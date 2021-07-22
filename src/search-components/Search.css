@@ -1,0 +1,254 @@
+header {
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+  width: 100%;
+}
+
+footer {
+  background-color: #F4F4F4;
+}
+
+.search-results-logo {
+  background-image: url(https://s3-media0.fl.yelpcdn.com/assets/public/default.yji-1997cfe373f3a95a1467e9b715f3934a.png);
+  background-size: 100px 50px;
+  width: 100px;
+  height: 50px;
+  margin: 0 auto 12px;
+}
+
+.search-results-form {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr auto;
+  width: 95%;
+  margin: 0 auto 25px;
+}
+
+.search-results-form input {
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  outline: none;
+}
+
+.search-results-form span {
+  background-color: white;
+}
+
+.search-results-form>span {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto 1fr;
+  justify-items: start;
+  padding-left: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.search-results-form>span:first-child {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px 0 0 5px;
+}
+
+.search-results-form>span>span {
+  align-self: center;
+}
+
+.search-results-form button {
+  border: 0;
+  background-color: #BE2020;
+  border-radius: 0 5px 5px 0;
+}
+
+.search-results-form button>span {
+  background-color: #BE2020;
+  color: white;
+  padding: 0 10px;
+}
+
+.search-results-header-services>li {
+  margin-right: 20px;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 6fr 5fr;
+}
+
+.header-businesses-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 3.5fr 3.5fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.search-filters-browsing-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 8fr 2fr;
+  margin-bottom: 30px;
+}
+
+.search-filters-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 60px));
+  row-gap: 15px;
+  column-gap: 5px;
+  width: 70%;
+  max-width: 700px;
+  justify-items: center;
+}
+
+.search-filters-grid>div {
+  display: grid;
+  width: fit-content;
+  min-width: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.search-filters-grid>div>p {
+  margin-bottom: 0;
+  align-self: center;
+  justify-self: center;
+  font-size: .8rem;
+  white-space: nowrap;
+}
+
+.google-map {
+  width: 100%;
+  max-width: 750px;
+  height: 100vh;
+  position: relative;
+}
+
+.google-map>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+}
+
+.filters-map {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 7fr 3fr;
+}
+
+.search-results-card {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto auto;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 90%;
+  border-radius: 5px;
+  margin: 0 25px 25px;
+}
+
+.search-results-card>.carousel {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
+
+.search-results-card img {
+  border-radius: 5px;
+}
+
+.search-results-card>div:nth-child(2) {
+  padding: 10px;
+}
+
+.more-nearby-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+
+.more-nearby-columns a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.more-nearby-columns p {
+  margin-bottom: 5px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 200px));
+}
+
+.footer-top ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-top a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 450px) {
+  .search-results-header-services {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .search-results-form {
+    display: initial;
+  }
+  .search-results-form>span:first-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px 5px 0 0;
+  }
+  .search-results-form>span:first-child input {
+    border-radius: 0 5px 0 0;
+  }
+  .search-results-form button {
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+  }
+  .header-grid {
+    grid-template-columns: 1fr 11fr;
+    grid-template-areas: "logo logo" "search-form search-form" "search-header-services search-header-services";
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+  }
+  .header-businesses-grid {
+    display: none;
+  }
+  .search-filters-browsing-grid {
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 1fr;
+  }
+  .google-map {
+    display: none;
+  }
+  .filters-map {
+    display: inherit;
+  }
+  .search-results-logo {
+    grid-area: logo;
+    background-size: 50px 25px;
+    width: 50px;
+    height: 25px;
+  }
+  .search-results-form {
+    grid-area: search-form;
+  }
+  .search-results-header-services {
+    grid-area: search-header-services;
+  }
+  .search-results-card {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    margin: 0 auto 25px;
+  }
+  .carousel {
+    justify-self: center;
+  }
+}

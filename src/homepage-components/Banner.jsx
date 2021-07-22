@@ -1,7 +1,7 @@
 import React from 'react';
-import '../Homepage.css';
+import BannerForm from './BannerForm';
 
-const Banner = () => {
+const Banner = ({setView}) => {
   return (
     <div className="banner">
       <div className="banner-info-bar">
@@ -22,7 +22,7 @@ const Banner = () => {
           <div className="banner-info-dropdown dropdown">
             <a className="btn d-flex link-light dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
               <span>
-                <img src="./img/user_medium_square.png" alt="" />
+                <img src="./logo192.png" alt="" />
               </span>
             </a>
             <ul className="banner-info-dropdown-menu dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -72,19 +72,7 @@ const Banner = () => {
         <h1 className="banner-logo">
           <a href=""></a>
         </h1>
-        <form action="" className="banner-form">
-          <span className="">
-            <span className="d-inline-block">Find</span>
-            <input type="text" name="" id="" className="" />
-          </span>
-          <span>
-            <span className="d-inline-block">Near</span>
-            <input type="text" name="" id="" />
-          </span>
-          <button type="submit">
-            <span className="fas fa-search" />
-          </button>
-        </form>
+        <BannerForm setView={setView} />
         <ul className="banner-services">
           <li>
             <span className="fas fa-faucet" />
