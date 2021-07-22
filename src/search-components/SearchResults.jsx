@@ -1,35 +1,36 @@
 import React from 'react';
 import SearchFilters from './SearchFilters';
 import MoreNearby from './MoreNearby';
+import Footer from './Footer';
 
-const SearchResults = () => {
+const SearchResults = ({paddingTop}) => {
   return (
-    <div>
+    <section>
       <SearchFilters />
       <h6 className="px-5 my-4 fw-bold">All Results</h6>
-      <div className="search-results-card ms-5 mb-5">
-        <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/sabroso1.jpg" class="d-block w-100" alt="..." />
+      <div className="search-results-card">
+        <div id="carouselExampleControls1" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src="./img/sabroso1.jpg" className="d-block w-100" alt="..." />
             </div>
-            <div class="carousel-item">
-              <img src="./img/sabroso2.jpg" class="d-block w-100" alt="..." />
+            <div className="carousel-item">
+              <img src="./img/sabroso2.jpg" className="d-block w-100" alt="..." />
             </div>
-            <div class="carousel-item">
-              <img src="./img/sabroso3.jpg" class="d-block w-100" alt="..." />
+            <div className="carousel-item">
+              <img src="./img/sabroso3.jpg" className="d-block w-100" alt="..." />
             </div>
-            <div class="carousel-item">
-              <img src="./img/sabroso4.jpg" class="d-block w-100" alt="..." />
+            <div className="carousel-item">
+              <img src="./img/sabroso4.jpg" className="d-block w-100" alt="..." />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
           </button>
         </div>
         <div className="ms-3">
@@ -40,7 +41,7 @@ const SearchResults = () => {
             <span className="fas fa-star"></span>
             <span className="fas fa-star"></span>
             <span className="fas fa-star"></span>
-            <p className="d-inline-block ms-3">3183</p>
+            <p className="d-inline-block ms-3 text-black-50">3183</p>
           </div>
           <p className="text-black-50">$$ • Mexican, Breakfast&Brunch, Seafood</p>
           <p className="text-black-50">
@@ -48,29 +49,29 @@ const SearchResults = () => {
           </p>
         </div>
       </div>
-      <div className="search-results-card ms-5 mb-5">
-        <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/mrg1.jpg" class="d-block w-100" alt="..." />
+      <div className="search-results-card">
+        <div id="carouselExampleControls2" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src="./img/mrg1.jpg" className="d-block w-100" alt="..." />
             </div>
-            <div class="carousel-item">
-              <img src="./img/mrg2.jpg" class="d-block w-100" alt="..." />
+            <div className="carousel-item">
+              <img src="./img/mrg2.jpg" className="d-block w-100" alt="..." />
             </div>
-            <div class="carousel-item">
-              <img src="./img/mrg3.jpg" class="d-block w-100" alt="..." />
+            <div className="carousel-item">
+              <img src="./img/mrg3.jpg" className="d-block w-100" alt="..." />
             </div>
-            <div class="carousel-item">
-              <img src="./img/mrg4.jpg" class="d-block w-100" alt="..." />
+            <div className="carousel-item">
+              <img src="./img/mrg4.jpg" className="d-block w-100" alt="..." />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
           </button>
         </div>
         <div className="ms-3">
@@ -81,7 +82,7 @@ const SearchResults = () => {
             <span className="fas fa-star"></span>
             <span className="fas fa-star"></span>
             <span className="fas fa-star"></span>
-            <p className="d-inline-block ms-3">1667</p>
+            <p className="d-inline-block ms-3 text-black-50">1667</p>
           </div>
           <p className="text-black-50">$$ • Korean, Barbeque, Soup</p>
           <p className="text-black-50">
@@ -89,29 +90,29 @@ const SearchResults = () => {
           </p>
         </div>
       </div>
-      <div className="search-results-card ms-5 mb-5">
-        <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/hug1.jpg" class="d-block w-100" alt="..." />
+      <div className="search-results-card">
+        <div id="carouselExampleControls3" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src="./img/hug1.jpg" className="d-block w-100" alt="..." />
             </div>
-            <div class="carousel-item">
-              <img src="./img/hug2.jpg" class="d-block w-100" alt="..." />
+            <div className="carousel-item">
+              <img src="./img/hug2.jpg" className="d-block w-100" alt="..." />
             </div>
-            <div class="carousel-item">
-              <img src="./img/hug3.jpg" class="d-block w-100" alt="..." />
+            <div className="carousel-item">
+              <img src="./img/hug3.jpg" className="d-block w-100" alt="..." />
             </div>
-            <div class="carousel-item">
-              <img src="./img/hug4.jpg" class="d-block w-100" alt="..." />
+            <div className="carousel-item">
+              <img src="./img/hug4.jpg" className="d-block w-100" alt="..." />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
           </button>
         </div>
         <div className="ms-3">
@@ -122,7 +123,7 @@ const SearchResults = () => {
             <span className="fas fa-star"></span>
             <span className="fas fa-star"></span>
             <span className="fas fa-star"></span>
-            <p className="d-inline-block ms-3">1179</p>
+            <p className="d-inline-block ms-3 text-black-50">1179</p>
           </div>
           <p className="text-black-50">$$ • Ice Cream & Frozen Yogurt, Desserts, Bakeries</p>
           <p className="text-black-50">
@@ -131,7 +132,8 @@ const SearchResults = () => {
         </div>
       </div>
       <MoreNearby />
-    </div>
+      <Footer />
+    </section>
 
   )
 }

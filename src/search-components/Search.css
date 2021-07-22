@@ -1,3 +1,14 @@
+header {
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+  width: 100%;
+}
+
+footer {
+  background-color: #F4F4F4;
+}
+
 .search-results-logo {
   background-image: url(https://s3-media0.fl.yelpcdn.com/assets/public/default.yji-1997cfe373f3a95a1467e9b715f3934a.png);
   background-size: 100px 50px;
@@ -111,12 +122,14 @@
   width: 100%;
   max-width: 750px;
   height: 100vh;
+  position: relative;
 }
 
 .google-map>img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: fixed;
 }
 
 .filters-map {
@@ -130,15 +143,29 @@
   grid-template-rows: 1fr;
   grid-template-columns: auto auto;
   cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 90%;
+  border-radius: 5px;
+  margin: 0 25px 25px;
 }
 
-.search-results-card>.carousel  {
+.search-results-card>.carousel {
   width: 200px;
   height: 200px;
+  padding: 10px;
+}
+
+.search-results-card img {
+  border-radius: 5px;
+}
+
+.search-results-card>div:nth-child(2) {
+  padding: 10px;
 }
 
 .more-nearby-columns {
-  columns: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
 }
 
 .more-nearby-columns a {
@@ -148,6 +175,21 @@
 
 .more-nearby-columns p {
   margin-bottom: 5px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 200px));
+}
+
+.footer-top ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-top a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 750px) {
@@ -180,7 +222,7 @@
     display: none;
   }
   .filters-map {
-    display: initial;
+    display: inherit;
   }
   .search-results-logo {
     grid-area: logo;
@@ -190,5 +232,13 @@
   }
   .search-results-header-services {
     grid-area: search-header-services;
+  }
+  .search-results-card {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    margin: 0 auto 25px;
+  }
+  .carousel {
+    justify-self: center;
   }
 }

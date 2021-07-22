@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeaderForm from './HeaderForm';
 
 
-const Header = ({ setView }) => {
+const Header = ({ setView, setPaddingTop }) => {
   const handleClick = () => {
     setView('HP');
   }
 
+  const resizeHeader = () => {
+    const header = document.getElementsByTagName('header')[0];
+    const height = header.clientHeight;
+    setPaddingTop(height)
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', resizeHeader);
+
+    return () => window.removeEventListener('resize', resizeHeader);
+  });
+
   return (
-    <div>
+    <header>
       <div className="header-grid my-4 px-5">
         <h1 className="search-results-logo text-start" onClick={handleClick}><a href=""></a></h1>
         <HeaderForm />
@@ -84,7 +96,7 @@ const Header = ({ setView }) => {
           </li>
         </ul>
       </div>
-    </div>
+    </header>
   )
 }
 

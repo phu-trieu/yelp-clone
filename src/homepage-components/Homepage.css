@@ -187,10 +187,11 @@
 }
 
 .next-review-grid {
-  grid-template-columns: repeat(auto-fit, minmax(1rem, 650px));
+  grid-template-columns: repeat(auto-fit, minmax(1px, 500px));
   justify-content: center;
   gap: 25px;
-  width: 75%;
+  width: 85%;
+  max-width: 1500px;
   margin: auto;
 }
 
