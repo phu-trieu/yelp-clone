@@ -187,9 +187,11 @@
 }
 
 .next-review-grid {
-  grid-template-columns: repeat(auto-fit, minmax(1rem, 500px));
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 650px));
   justify-content: center;
   gap: 25px;
+  width: 75%;
+  margin: auto;
 }
 
 .next-review-card {
@@ -247,6 +249,9 @@
   .banner-form button {
     width: 100%;
     border-radius: 0 0 5px 5px;
+  }
+  .next-review-grid {
+    width: 100%;
   }
 }
 

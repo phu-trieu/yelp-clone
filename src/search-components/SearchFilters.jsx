@@ -43,7 +43,6 @@ const SearchFilters = () => {
           </div>
         </div>
       </div>
-      <h6>All Results</h6>
     </div>
   )
 }

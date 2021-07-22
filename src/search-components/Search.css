@@ -61,8 +61,8 @@
 
 .header-grid {
   display: grid;
-  grid-template-columns: 1fr 6fr 5fr;
   grid-template-rows: 1fr;
+  grid-template-columns: 1fr 6fr 5fr;
 }
 
 .header-businesses-grid {
@@ -125,6 +125,31 @@
   grid-template-columns: 7fr 3fr;
 }
 
+.search-results-card {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto auto;
+  cursor: pointer;
+}
+
+.search-results-card>.carousel  {
+  width: 200px;
+  height: 200px;
+}
+
+.more-nearby-columns {
+  columns: 3;
+}
+
+.more-nearby-columns a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.more-nearby-columns p {
+  margin-bottom: 5px;
+}
+
 @media screen and (max-width: 750px) {
   .search-results-form {
     display: initial;
@@ -142,6 +167,7 @@
   }
   .header-grid {
     grid-template-columns: 1fr 11fr;
+    grid-template-areas: "logo search-form" "search-header-services search-header-services"
   }
   .header-businesses-grid {
     display: none;
@@ -155,5 +181,14 @@
   }
   .filters-map {
     display: initial;
+  }
+  .search-results-logo {
+    grid-area: logo;
+  }
+  .search-results-form {
+    grid-area: search-form;
+  }
+  .search-results-header-services {
+    grid-area: search-header-services;
   }
 }
