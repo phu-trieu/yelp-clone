@@ -21,7 +21,7 @@ const Header = ({ setView, setPaddingTop }) => {
 
   return (
     <header>
-      <div className="header-grid my-4 px-5">
+      <div className="header-grid pt-4 px-5">
         <h1 className="search-results-logo text-start" onClick={handleClick}><a href=""></a></h1>
         <HeaderForm />
         <div className="header-businesses-grid">

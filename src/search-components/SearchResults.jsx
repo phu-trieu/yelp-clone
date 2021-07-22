@@ -7,7 +7,7 @@ const SearchResults = ({paddingTop}) => {
   return (
     <section>
       <SearchFilters />
-      <h6 className="px-5 my-4 fw-bold">All Results</h6>
+      <h6 className="px-5 py-4 fw-bold">All Results</h6>
       <div className="search-results-card">
         <div id="carouselExampleControls1" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
           <div className="carousel-inner">
