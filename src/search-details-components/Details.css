@@ -8,6 +8,7 @@
 
 #business-details {
   padding-right: 16px;
+  margin-bottom: 16px;
 }
 
 .details-banner-container {
@@ -166,8 +167,11 @@
 .write-review {
   display: flex;
   column-gap: 10px;
+}
+
+.write-review, .full-menu {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .write-review-btn {
