@@ -97,10 +97,11 @@
   padding: 5px
 }
 
-.top-sticky-menu {
+.top-sticky-menu, .bottom-sticky-menu {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 16px;
   border-radius: 5px;
+  margin-bottom: 15px;;
 }
 
 .top-sticky-menu>p {
@@ -129,6 +130,22 @@
   white-space: nowrap;
   padding-right: 10px;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bottom-sticky-menu>div {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 80% auto;
+  padding: 10px 0;
+}
+
+.bottom-sticky-menu>div:first-child, .bottom-sticky-menu>div:nth-child(2) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bottom-sticky-menu>div>span {
+  justify-self: end;
+  font-size: 1.4rem;
 }
 
 @media screen and (max-width: 350px) {

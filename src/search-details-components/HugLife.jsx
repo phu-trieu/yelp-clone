@@ -8,6 +8,7 @@ const HugLife = () => {
       <HugLifeBanner />
       <StickyMenu />
 
+
     </div>
   )
 }
