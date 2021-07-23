@@ -49,9 +49,20 @@
 
 .details-hours-container {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(5, fit-content(260px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   column-gap: 10px;
+}
+
+.details-hours {
+  display: grid;
+  grid-template-columns: repeat(2, fit-content(200px));
+  grid-template-rows: 1fr;
+}
+
+.details-hours-updated {
+  display: grid;
+  grid-template-columns: fit-content(20px) fit-content(300px);
+  grid-template-rows: 1fr;
 }
 
 .photo-btn {
@@ -67,6 +78,66 @@
   margin-bottom: 1rem;
 }
 
+.sticky-menu {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 150px;
+  max-width: 375px;
+}
+
+.sticky-menu label, .sticky-menu input, .order-btn {
+  width: 100%;
+}
+
+.sticky-menu label {
+  margin-bottom: 15px;
+}
+
+.sticky-menu input {
+  padding: 5px
+}
+
+.top-sticky-menu {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.top-sticky-menu>p {
+  width: fit-content;
+  border-bottom: 5px solid var(--yelp-color);
+}
+
+.order-btn {
+  border: 0;
+  background-color: var(--yelp-color);
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.delivery-costs {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, fit-content(100px));
+  column-gap: 10px;
+}
+
+.delivery-costs>p:first-child, .delivery-costs>p:nth-child(2) {
+  white-space: nowrap;
+  padding-right: 10px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 350px) {
+  .delivery-costs {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .details-img-overlay {
     position: relative;
@@ -77,7 +148,7 @@
   .image-container:after {
     position: relative;
   }
-  .details-title, .details-categories, .details-hours, .details-img-ratings *, .photo-btn {
+  .details-title, .details-categories, .details-hours p:nth-child(2), .details-img-ratings *, .photo-btn {
     color: black;
   }
   .photo-btn {

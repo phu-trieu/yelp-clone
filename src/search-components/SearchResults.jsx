@@ -17,7 +17,7 @@ const SearchResults = ({setView, paddingTop}) => {
     <section>
       <SearchFilters />
       <h6 className="px-5 py-4 fw-bold">All Results</h6>
-      <div className="search-results-card" onClick={handleClick} data-tag="sabroso">
+      <div className="search-results-card">
         <div id="carouselExampleControls1" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -42,7 +42,7 @@ const SearchResults = ({setView, paddingTop}) => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <div className="ms-3">
+        <div className="ms-3" onClick={handleClick} data-tag="sabroso">
           <h5 className="fw-bold">1. Sabroso! Mexican Grill</h5>
           <div className="d-inline-block">
             <span className="fas fa-star"></span>
@@ -58,7 +58,7 @@ const SearchResults = ({setView, paddingTop}) => {
           </p>
         </div>
       </div>
-      <div className="search-results-card" onClick={handleClick} data-tag="mrg">
+      <div className="search-results-card" >
         <div id="carouselExampleControls2" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -83,7 +83,7 @@ const SearchResults = ({setView, paddingTop}) => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <div className="ms-3">
+        <div className="ms-3" onClick={handleClick} data-tag="mrg">
           <h5 className="fw-bold">2. Mo Ran Gak Restaurant</h5>
           <div className="d-inline-block">
             <span className="fas fa-star"></span>
@@ -99,7 +99,7 @@ const SearchResults = ({setView, paddingTop}) => {
           </p>
         </div>
       </div>
-      <div className="search-results-card" onClick={handleClick} data-tag="hug">
+      <div className="search-results-card" >
         <div id="carouselExampleControls3" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -124,7 +124,7 @@ const SearchResults = ({setView, paddingTop}) => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <div className="ms-3">
+        <div className="ms-3" onClick={handleClick} data-tag="hug">
           <h5 className="fw-bold">3. Hug Life Ice Cream</h5>
           <div className="d-inline-block">
             <span className="fas fa-star"></span>
