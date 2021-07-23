@@ -4,7 +4,10 @@ import HeaderForm from './HeaderForm';
 
 const Header = ({ setView, setPaddingTop }) => {
   const handleClick = () => {
-    setView('HP');
+    setView(prevView => ({
+      ...prevView,
+      page: 'HP'
+    }));
   }
 
   const resizeHeader = () => {

@@ -3,12 +3,21 @@ import SearchFilters from './SearchFilters';
 import MoreNearby from './MoreNearby';
 import Footer from './Footer';
 
-const SearchResults = ({paddingTop}) => {
+const SearchResults = ({setView, paddingTop}) => {
+  const handleClick = e => {
+    const tag = e.currentTarget.dataset.tag
+    console.log(tag)
+    setView({
+      page: 'SD',
+      details: tag
+    })
+  }
+
   return (
     <section>
       <SearchFilters />
       <h6 className="px-5 py-4 fw-bold">All Results</h6>
-      <div className="search-results-card">
+      <div className="search-results-card" onClick={handleClick} data-tag="sabroso">
         <div id="carouselExampleControls1" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -49,7 +58,7 @@ const SearchResults = ({paddingTop}) => {
           </p>
         </div>
       </div>
-      <div className="search-results-card">
+      <div className="search-results-card" onClick={handleClick} data-tag="mrg">
         <div id="carouselExampleControls2" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -90,7 +99,7 @@ const SearchResults = ({paddingTop}) => {
           </p>
         </div>
       </div>
-      <div className="search-results-card">
+      <div className="search-results-card" onClick={handleClick} data-tag="hug">
         <div id="carouselExampleControls3" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
           <div className="carousel-inner">
             <div className="carousel-item active">

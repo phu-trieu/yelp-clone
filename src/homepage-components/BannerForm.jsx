@@ -3,7 +3,10 @@ import React from 'react';
 const BannerForm = ({setView}) => {
   const handleClick = e => {
     e.preventDefault();
-    setView('SR');
+    setView(prevView => ({
+      ...prevView,
+      page: 'SR'
+    }));
   }
 
   return (

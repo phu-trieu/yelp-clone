@@ -15,7 +15,7 @@ const Search = ({ setView }) => {
     <div>
       <Header setView={setView} setPaddingTop={setPaddingTop} />
       <div className="filters-map" style={{paddingTop: paddingTop}}>
-        <SearchResults paddingTop={paddingTop} />
+        <SearchResults setView={setView} paddingTop={paddingTop} />
         <GoogleMap />
       </div>
     </div>

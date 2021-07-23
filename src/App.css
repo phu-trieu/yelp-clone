@@ -38,6 +38,10 @@
   color: var(--yelp-color);
 }
 
+.white-font {
+  color: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -135,7 +135,7 @@ footer {
 .filters-map {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 7fr 3fr;
+  grid-template-columns: 6fr 4fr;
 }
 
 .search-results-card {
