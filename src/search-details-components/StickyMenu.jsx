@@ -4,8 +4,8 @@ const StickyMenu = () => {
   return (
     <div className="sticky-menu">
       <div className="top-sticky-menu">
-        <h5 className="fw-bold">Order Food</h5>
-        <p className="fw-bold">Delivery</p>
+        <h5 className="fw-bold mb-3">Order Food</h5>
+        <p className="fw-bold mb-4">Delivery</p>
         <div className="delivery-costs">
           <p>
             <b>$0.99 </b>

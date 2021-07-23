@@ -2,7 +2,7 @@ import React from 'react'
 
 const HugLifeBanner = () => {
   return (
-    <div className="details-container">
+    <div className="details-banner-container">
       <div className="details-img-grid">
         <div className="image-container">
           <img src="./img/hug5.jpg" alt="" />

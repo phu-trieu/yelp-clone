@@ -1,6 +1,19 @@
-.details-container {
+#all-details {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr auto;
+  width: 90%;
+  margin: auto;
+}
+
+#business-details {
+  padding-right: 16px;
+}
+
+.details-banner-container {
   display: grid;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .details-img-grid {
@@ -25,6 +38,7 @@
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   width: 100%;
+  padding: 20px;
 }
 
 .details-img-ratings {
@@ -83,6 +97,7 @@
   position: -webkit-sticky;
   top: 150px;
   max-width: 375px;
+  padding-left: 16px;
 }
 
 .sticky-menu label, .sticky-menu input, .order-btn {
@@ -147,6 +162,36 @@
   justify-self: end;
   font-size: 1.4rem;
 }
+
+.write-review {
+  display: flex;
+  column-gap: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+
+.write-review-btn {
+  border: 0;
+  background-color: var(--yelp-color);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.not-write-review-btn {
+  background-color: white;
+  border-radius: 5px;
+  padding: 8px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.4)
+}
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 350px) {
   .delivery-costs {
@@ -222,5 +267,12 @@
 @media screen and (min-width: 1451px) and (max-width: 1750px) {
   .details-img-grid>div:nth-child(5) {
     display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #all-details {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
   }
 }
