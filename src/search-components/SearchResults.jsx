@@ -6,7 +6,6 @@ import Footer from './Footer';
 const SearchResults = ({setView, paddingTop}) => {
   const handleClick = e => {
     const tag = e.currentTarget.dataset.tag
-    console.log(tag)
     setView({
       page: 'SD',
       details: tag
