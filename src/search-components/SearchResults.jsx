@@ -20,16 +20,16 @@ const SearchResults = ({setView, paddingTop}) => {
         <div id="carouselExampleControls1" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="./img/sabroso1.jpg" className="d-block w-100" alt="..." />
+              <img src={`${process.env.PUBLIC_URL}/img/sabroso1.jpg`} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="./img/sabroso2.jpg" className="d-block w-100" alt="..." />
+              <img src={`${process.env.PUBLIC_URL}/img/sabroso2.jpg`} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="./img/sabroso3.jpg" className="d-block w-100" alt="..." />
+              <img src={`${process.env.PUBLIC_URL}/img/sabroso3.jpg`} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="./img/sabroso4.jpg" className="d-block w-100" alt="..." />
+              <img src={`${process.env.PUBLIC_URL}/img/sabroso4.jpg`} className="d-block w-100" alt="..." />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
@@ -61,16 +61,16 @@ const SearchResults = ({setView, paddingTop}) => {
         <div id="carouselExampleControls2" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="./img/mrg1.jpg" className="d-block w-100" alt="..." />
+              <img src={`${process.env.PUBLIC_URL}/img/mrg1.jpg`} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="./img/mrg2.jpg" className="d-block w-100" alt="..." />
+              <img src={`${process.env.PUBLIC_URL}/img/mrg2.jpg`} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="./img/mrg3.jpg" className="d-block w-100" alt="..." />
+              <img src={`${process.env.PUBLIC_URL}/img/mrg3.jpg`} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="./img/mrg4.jpg" className="d-block w-100" alt="..." />
+              <img src={`${process.env.PUBLIC_URL}/img/mrg4.jpg`} className="d-block w-100" alt="..." />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
@@ -102,16 +102,16 @@ const SearchResults = ({setView, paddingTop}) => {
         <div id="carouselExampleControls3" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="./img/hug1.jpg" className="d-block w-100" alt="..." />
+              <img src={`${process.env.PUBLIC_URL}/img/hug1.jpg`} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="./img/hug2.jpg" className="d-block w-100" alt="..." />
+              <img src={`${process.env.PUBLIC_URL}/img/hug2.jpg`} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="./img/hug3.jpg" className="d-block w-100" alt="..." />
+              <img src={`${process.env.PUBLIC_URL}/img/hug3.jpg`} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item">
-              <img src="./img/hug4.jpg" className="d-block w-100" alt="..." />
+              <img src={`${process.env.PUBLIC_URL}/img/hug4.jpg`} className="d-block w-100" alt="..." />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">

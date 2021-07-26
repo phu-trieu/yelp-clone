@@ -5,12 +5,12 @@ const MRGBanner = () => {
     <div className="details-banner-container">
       <div className="details-img-grid">
         <div className="image-container">
-          <img src="./img/mrg5.jpg" alt="" />
+          <img src={`${process.env.PUBLIC_URL}/img/mrg5.jpg`} alt="" />
         </div>
-        <div><img src="./img/mrg6.jpg" alt="" /></div>
-        <div><img src="./img/mrg7.jpg" alt="" /></div>
-        <div><img src="./img/mrg8.jpg" alt="" /></div>
-        <div><img src="./img/mrg9.jpg" alt="" /></div>
+        <div><img src={`${process.env.PUBLIC_URL}/img/mrg6.jpg`} alt="" /></div>
+        <div><img src={`${process.env.PUBLIC_URL}/img/mrg7.jpg`} alt="" /></div>
+        <div><img src={`${process.env.PUBLIC_URL}/img/mrg8.jpg`} alt="" /></div>
+        <div><img src={`${process.env.PUBLIC_URL}/img/mrg9.jpg`} alt="" /></div>
         <div className="details-img-overlay">
           <div className="details-store-info">
             <div>

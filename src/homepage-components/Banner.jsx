@@ -22,13 +22,13 @@ const Banner = ({setView}) => {
           <div className="banner-info-dropdown dropdown">
             <a className="btn d-flex link-light dropdown-toggle" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
               <span>
-                <img src="./logo192.png" alt="" />
+                <img src={`${process.env.PUBLIC_URL}/logo192.png`} alt="" />
               </span>
             </a>
             <ul className="banner-info-dropdown-menu dropdown-menu" aria-labelledby="dropdownMenu2">
               <li>
                 <div className="d-grid">
-                  <img src="./logo192.png" alt="" />
+                  <img src={`${process.env.PUBLIC_URL}/logo192.png`} alt="" />
                   <div>
                     <a href="" className="fw-bold text-decoration-none">Phu T.</a>
                     <p>Westminster, CA</p>

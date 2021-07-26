@@ -48,7 +48,7 @@ const Footer = () => {
         <div className="languages">
           <h5 className="fw-bold">Languages</h5>
           <div className="dropdown">
-            <a className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <a className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink5" data-bs-toggle="dropdown" aria-expanded="false">
               English
             </a>
 
@@ -62,7 +62,7 @@ const Footer = () => {
         <div className="countries">
           <h5 className="fw-bold">Countries</h5>
           <div className="dropdown">
-            <a className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <a className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink6" data-bs-toggle="dropdown" aria-expanded="false">
               United States
             </a>
 
