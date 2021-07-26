@@ -5,12 +5,12 @@ const SabrosoBanner = () => {
     <div className="details-banner-container">
       <div className="details-img-grid">
         <div className="image-container">
-          <img src="./img/sabroso5.jpg" alt="" />
+          <img src={`${process.env.PUBLIC_URL}/img/sabroso5.jpg`} alt="" />
         </div>
-        <div><img src="./img/sabroso6.jpg" alt="" /></div>
-        <div><img src="./img/sabroso7.jpg" alt="" /></div>
-        <div><img src="./img/sabroso8.jpg" alt="" /></div>
-        <div><img src="./img/sabroso9.jpg" alt="" /></div>
+        <div><img src={`${process.env.PUBLIC_URL}/img/sabroso6.jpg`} alt="" /></div>
+        <div><img src={`${process.env.PUBLIC_URL}/img/sabroso7.jpg`} alt="" /></div>
+        <div><img src={`${process.env.PUBLIC_URL}/img/sabroso8.jpg`} alt="" /></div>
+        <div><img src={`${process.env.PUBLIC_URL}/img/sabroso9.jpg`} alt="" /></div>
         <div className="details-img-overlay">
           <div className="details-store-info">
             <div>

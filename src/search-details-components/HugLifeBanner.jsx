@@ -5,12 +5,12 @@ const HugLifeBanner = () => {
     <div className="details-banner-container">
       <div className="details-img-grid">
         <div className="image-container">
-          <img src="./img/hug5.jpg" alt="" />
+          <img src={`${process.env.PUBLIC_URL}/img/hug5.jpg`} alt="" />
         </div>
-        <div><img src="./img/hug6.jpg" alt="" /></div>
-        <div><img src="./img/hug7.jpg" alt="" /></div>
-        <div><img src="./img/hug8.jpg" alt="" /></div>
-        <div><img src="./img/hug9.jpg" alt="" /></div>
+        <div><img src={`${process.env.PUBLIC_URL}/img/hug6.jpg`} alt="" /></div>
+        <div><img src={`${process.env.PUBLIC_URL}/img/hug7.jpg`} alt="" /></div>
+        <div><img src={`${process.env.PUBLIC_URL}/img/hug8.jpg`} alt="" /></div>
+        <div><img src={`${process.env.PUBLIC_URL}/img/hug9.jpg`} alt="" /></div>
         <div className="details-img-overlay">
           <div className="details-store-info">
             <div>
@@ -53,7 +53,7 @@ const HugLifeBanner = () => {
             </div>
           </div>
           <div className="d-grid">
-            <button type="button" class="photo-btn btn white-font fw-bold">See 1410 photos</button>
+            <button type="button" className="photo-btn btn white-font fw-bold">See 1410 photos</button>
           </div>
         </div>
       </div>

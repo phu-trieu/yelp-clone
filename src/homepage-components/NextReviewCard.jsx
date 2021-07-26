@@ -3,7 +3,7 @@ import React from 'react'
 const NextReviewCard = ({img, title}) => {
   return (
     <div className="d-grid next-review-card">
-      <img src={`./img/${img}.jpg`} alt="" />
+      <img src={`${process.env.PUBLIC_URL}/img/${img}.jpg`} alt="" />
       <div className="d-grid align-content-center">
         <div className="d-grid">
           <a href="" className="text-decoration-none fw-bold">{title}</a>

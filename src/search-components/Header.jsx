@@ -38,8 +38,8 @@ const Header = ({ setView, setPaddingTop }) => {
         <ul className="search-results-header-services">
           <li className="d-inline-block">
             <div className=" dropdown d-inline-block">
-              <a href="#" className="dropdown-toggle text-decoration-none text-dark" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">Restaurants</a>
-              <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+              <a href="#" className="dropdown-toggle text-decoration-none text-dark" role="button" id="dropdownMenuLink7" data-bs-toggle="dropdown" aria-expanded="false">Restaurants</a>
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink7">
                 <li><a className="dropdown-item" href="#">Delivery</a></li>
                 <li><a className="dropdown-item" href="#">Reservations</a></li>
                 <li><a className="dropdown-item" href="#">Burgers</a></li>
@@ -53,8 +53,8 @@ const Header = ({ setView, setPaddingTop }) => {
           </li>
           <li className="d-inline-block">
             <div className=" dropdown d-inline-block">
-              <a href="#" className="dropdown-toggle text-decoration-none text-dark" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">Home Services</a>
-              <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+              <a href="#" className="dropdown-toggle text-decoration-none text-dark" role="button" id="dropdownMenuLink8" data-bs-toggle="dropdown" aria-expanded="false">Home Services</a>
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink8">
                 <li><a className="dropdown-item" href="#">Air Conditioning & Heating</a></li>
                 <li><a className="dropdown-item" href="#">Contractors</a></li>
                 <li><a className="dropdown-item" href="#">Electricians</a></li>
@@ -69,8 +69,8 @@ const Header = ({ setView, setPaddingTop }) => {
           </li>
           <li className="d-inline-block">
             <div className=" dropdown d-inline-block">
-              <a href="#" className="dropdown-toggle text-decoration-none text-dark" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">Auto Services</a>
-              <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+              <a href="#" className="dropdown-toggle text-decoration-none text-dark" role="button" id="dropdownMenuLink9" data-bs-toggle="dropdown" aria-expanded="false">Auto Services</a>
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink9">
                 <li><a className="dropdown-item" href="#">Auto Repair</a></li>
                 <li><a className="dropdown-item" href="#">Car Dealers</a></li>
                 <li><a className="dropdown-item" href="#">Auto Detailing</a></li>
@@ -84,8 +84,8 @@ const Header = ({ setView, setPaddingTop }) => {
           </li>
           <li className="d-inline-block">
             <div className=" dropdown d-inline-block">
-              <a href="#" className="dropdown-toggle text-decoration-none text-dark" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">More</a>
-              <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+              <a href="#" className="dropdown-toggle text-decoration-none text-dark" role="button" id="dropdownMenuLink10" data-bs-toggle="dropdown" aria-expanded="false">More</a>
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink10">
                 <li><a className="dropdown-item" href="#">Dry Cleaning</a></li>
                 <li><a className="dropdown-item" href="#">Hair Salons</a></li>
                 <li><a className="dropdown-item" href="#">Phone Repair</a></li>
