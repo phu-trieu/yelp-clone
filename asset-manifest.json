@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/yelp-clone/static/css/main.3ceee2a9.chunk.css",
-    "main.js": "/yelp-clone/static/js/main.7e566f2a.chunk.js",
-    "main.js.map": "/yelp-clone/static/js/main.7e566f2a.chunk.js.map",
+    "main.js": "/yelp-clone/static/js/main.b37376da.chunk.js",
+    "main.js.map": "/yelp-clone/static/js/main.b37376da.chunk.js.map",
     "runtime-main.js": "/yelp-clone/static/js/runtime-main.b7669c7e.js",
     "runtime-main.js.map": "/yelp-clone/static/js/runtime-main.b7669c7e.js.map",
     "static/js/2.2e4d334f.chunk.js": "/yelp-clone/static/js/2.2e4d334f.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b7669c7e.js",
     "static/js/2.2e4d334f.chunk.js",
     "static/css/main.3ceee2a9.chunk.css",
-    "static/js/main.7e566f2a.chunk.js"
+    "static/js/main.b37376da.chunk.js"
   ]
 }
