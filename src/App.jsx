@@ -5,8 +5,8 @@ import Details from './Details';
 
 const App = () => {
   const [view, setView] = useState({
-    page: 'HP',
-    details: null
+    page: 'SD',
+    details: 'hug'
   });
 
   const [paddingTop, setPaddingTop] = useState(0);

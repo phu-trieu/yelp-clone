@@ -99,7 +99,7 @@
   position: -webkit-sticky;
   top: 150px;
   max-width: 375px;
-  padding-left: 16px;
+  padding: 0 16px;
   height: 500px;
 }
 
@@ -203,10 +203,46 @@
   gap: 10px;
 }
 
+.address-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.address-grid button {
+  height: fit-content;
+}
+
+.location-map-width {
+  width: 100%;
+  max-width: 315px;
+}
+
+.location-map-width img {
+  width: 100%;
+  height: auto;
+}
+
+.hours-table>tbody>tr>* {
+  padding-right: 1rem;
+}
+
+.location-hours-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  column-gap: 10px;
+}
+
 @media screen and (max-width: 350px) {
   .delivery-costs {
     grid-template-rows: repeat(3, auto);
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hours-table b, .hours-table p {
+    font-size: 0.8rem;
   }
 }
 
