@@ -3,7 +3,15 @@ import SearchFilters from './SearchFilters';
 import MoreNearby from './MoreNearby';
 import Footer from './Footer';
 
-const SearchResults = ({paddingTop}) => {
+const SearchResults = ({setView, paddingTop}) => {
+  const handleClick = e => {
+    const tag = e.currentTarget.dataset.tag
+    setView({
+      page: 'SD',
+      details: tag
+    })
+  }
+
   return (
     <section>
       <SearchFilters />
@@ -33,7 +41,7 @@ const SearchResults = ({paddingTop}) => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <div className="ms-3">
+        <div className="ms-3" onClick={handleClick} data-tag="sabroso">
           <h5 className="fw-bold">1. Sabroso! Mexican Grill</h5>
           <div className="d-inline-block">
             <span className="fas fa-star"></span>
@@ -49,7 +57,7 @@ const SearchResults = ({paddingTop}) => {
           </p>
         </div>
       </div>
-      <div className="search-results-card">
+      <div className="search-results-card" >
         <div id="carouselExampleControls2" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -74,7 +82,7 @@ const SearchResults = ({paddingTop}) => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <div className="ms-3">
+        <div className="ms-3" onClick={handleClick} data-tag="mrg">
           <h5 className="fw-bold">2. Mo Ran Gak Restaurant</h5>
           <div className="d-inline-block">
             <span className="fas fa-star"></span>
@@ -90,7 +98,7 @@ const SearchResults = ({paddingTop}) => {
           </p>
         </div>
       </div>
-      <div className="search-results-card">
+      <div className="search-results-card" >
         <div id="carouselExampleControls3" className="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bs-wrap="false">
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -115,7 +123,7 @@ const SearchResults = ({paddingTop}) => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <div className="ms-3">
+        <div className="ms-3" onClick={handleClick} data-tag="hug">
           <h5 className="fw-bold">3. Hug Life Ice Cream</h5>
           <div className="d-inline-block">
             <span className="fas fa-star"></span>

@@ -47,29 +47,29 @@ const Footer = () => {
         </div>
         <div className="languages">
           <h5 className="fw-bold">Languages</h5>
-          <div class="dropdown">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          <div className="dropdown">
+            <a className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
               English
             </a>
 
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Spanish</a></li>
-              <li><a class="dropdown-item" href="#">French</a></li>
-              <li><a class="dropdown-item" href="#">Vietnamese</a></li>
+            <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a className="dropdown-item" href="#">Spanish</a></li>
+              <li><a className="dropdown-item" href="#">French</a></li>
+              <li><a className="dropdown-item" href="#">Vietnamese</a></li>
             </ul>
           </div>
         </div>
         <div className="countries">
           <h5 className="fw-bold">Countries</h5>
-          <div class="dropdown">
-            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          <div className="dropdown">
+            <a className="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
               United States
             </a>
 
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Spain</a></li>
-              <li><a class="dropdown-item" href="#">France</a></li>
-              <li><a class="dropdown-item" href="#">Vietnam</a></li>
+            <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a className="dropdown-item" href="#">Spain</a></li>
+              <li><a className="dropdown-item" href="#">France</a></li>
+              <li><a className="dropdown-item" href="#">Vietnam</a></li>
             </ul>
           </div>
         </div>
