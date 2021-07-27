@@ -2,7 +2,7 @@ import React from 'react'
 
 const ReviewHighlights = () => {
   return (
-    <div className="review-highlights-container">
+    <div className="review-highlights-container mb-3">
       <h5 className="mb-3"><b>Review Highlights</b></h5>
       <div className="review-highlights">
         <div className="mb-2">
